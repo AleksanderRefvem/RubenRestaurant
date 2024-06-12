@@ -1,0 +1,11 @@
+/* Mobil-først stil */
+body {
+    background-color: blue;
+}
+
+/* Større skjermer */
+@media (min-width: 768px) {
+    body {
+        background-color: green;
+    }
+}
