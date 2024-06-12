@@ -2,21 +2,14 @@
 body {
     background-color: #D48686;
 }
-
-/* Større skjermer */
-@media (min-width: 768px) {
-    body {
-        background-color: green;
-    }
-}
-
+/* Generelle stiler for header */
 .header {
     height: 11rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* For absolute positioning of menu icon */
+    position: relative;
     background-color: #D48686;
     padding: 20px 0;
 }
@@ -28,11 +21,55 @@ body {
 
 .header .menu-icon {
     position: absolute;
-    right: 2rem; /* Adjust the distance from the right edge */
-    top: 2rem; /* Adjust the distance from the top edge */
-    max-height: 2.5rem; /* Adjust size of the menu icon */
+    right: 20px;
+    top: 20px;
+    max-height: 2rem;
     width: auto;
+    border-radius: 50%;
 }
+
+/* Stiler for desktop-meny */
+.desktop-menu {
+    display: none; /* Skjul som standard */
+}
+
+.desktop-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.desktop-menu ul li {
+    display: inline;
+}
+
+.desktop-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Større skjermer */
+@media (min-width: 768px) {
+    .header {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .header .menu-icon {
+        display: none; /* Skjul menu-ikonet */
+    }
+
+    .desktop-menu {
+        display: block; /* Vis desktop-menyen */
+    }
+}
+
+
+
+
 img{
     border-radius: 2%;
 }
