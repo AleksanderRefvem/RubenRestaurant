@@ -1,6 +1,6 @@
 /* Mobil-først stil */
 body {
-    background-color: blue;
+    background-color: #D48686;
 }
 
 /* Større skjermer */
@@ -9,3 +9,41 @@ body {
         background-color: green;
     }
 }
+
+.header {
+    height: 11rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* For absolute positioning of menu icon */
+    background-color: #D48686;
+    padding: 20px 0;
+}
+
+.header .logo {
+    max-height: 11rem;
+    width: auto;
+}
+
+.header .menu-icon {
+    position: absolute;
+    right: 2rem; /* Adjust the distance from the right edge */
+    top: 2rem; /* Adjust the distance from the top edge */
+    max-height: 2.5rem; /* Adjust size of the menu icon */
+    width: auto;
+}
+img{
+    border-radius: 2%;
+}
+
+.velkomstBilde{
+    width: 100%;
+}
+.h1{
+    color: #FFFFFF;
+}
+p{
+    color: #FFFFFF;
+}
+
