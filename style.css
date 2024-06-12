@@ -51,3 +51,28 @@ p{
     width: 100%;
 }
 
+/* CSS for Google Maps */
+.map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS for Footer */
+.footer {
+    background-color: #343a40; /* Mørk bakgrunnsfarge */
+    color: #ffffff; /* Hvit tekstfarge */
+    text-align: center; /* Sentrer teksten */
+    padding: 20px 0; /* Padding øverst og nederst */
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    margin: 0; /* Fjern margin for <p> elementer */
+    padding: 5px 0; /* Litt padding for mellomrom mellom linjene */
+}
+
+
